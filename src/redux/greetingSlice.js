@@ -7,7 +7,7 @@ export const fetchRandomGreeting = createAsyncThunk(
     const response = await axios.get('http://localhost:3000/api/greetings/random');
 
     return response.data;
-  }
+  },
 );
 
 const greetingSlice = createSlice({
